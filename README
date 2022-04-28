@@ -1,0 +1,19 @@
+You can use the package flutter_native_splash to add native splash screens for Android and iOS without the manual changes described in other answers.
+
+The package does the manual changes for you.
+
+1 - Depend on it:
+
+dev_dependencies:
+  flutter_native_splash: ^0.1.4
+And flutter pub get
+
+2 - Configure your splash screen on pubspec.yaml:
+
+    flutter_native_splash:
+      image: assets/images/splash.png
+      color: 42a5f5
+3 - Run the package
+
+flutter pub run flutter_native_splash:create
+Splash screens are now generated.
